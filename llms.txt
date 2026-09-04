@@ -6,9 +6,9 @@
 
 ## Pages
 - [Home (JA)](https://ryunosuke-noda.com/): Statement, practice (clinician / researcher / educator), biography, contact
-- [Works (JA)](https://ryunosuke-noda.com/works.html): Research narrative, invited lectures, committees, media, awards, books, selected publications, clinical practice, education, CV (PDF, JA/EN)
+- [Portfolio (JA)](https://ryunosuke-noda.com/works.html): Research narrative, invited lectures, committees, media, awards, books, selected publications, clinical practice, education, CV (PDF, JA/EN)
 - [Contact (JA)](https://ryunosuke-noda.com/contact.html): Inquiry form for speaking, writing, media, and research collaboration
-- [Home (EN)](https://ryunosuke-noda.com/en.html), [Works (EN)](https://ryunosuke-noda.com/en-works.html), [Contact (EN)](https://ryunosuke-noda.com/en-contact.html)
+- [Home (EN)](https://ryunosuke-noda.com/en.html), [Portfolio (EN)](https://ryunosuke-noda.com/en-works.html), [Contact (EN)](https://ryunosuke-noda.com/en-contact.html)
 
 ## Authoritative sources
 - researchmap (official achievement list): https://researchmap.jp/nodaryu
