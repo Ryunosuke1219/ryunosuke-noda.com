@@ -3,6 +3,40 @@ const STATIC = new URLSearchParams(location.search).has('static')
   || matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (STATIC) document.documentElement.classList.add('static-mode');
 
+/* ---------- desktop zoom normalization ----------
+   デザインの基準幅は1096px（ヒーロー文字のclamp上限が効く幅）。
+   それより広いPC画面では、基準幅レイアウトを等倍拡大して密度を保つ。
+   スマホ・タブレット（<=1096px）には一切影響しない。 */
+const ZOOM_BASE = 1096;
+let PAGE_ZOOM = 1;
+let vhCompensation = null;
+function probeVhCompensation(z) {
+  /* このブラウザで 100vh が zoom の影響を受けるか実測（ブラウザ実装差を吸収） */
+  const p = document.createElement('div');
+  p.style.cssText = 'position:absolute;top:0;left:0;height:100vh;width:1px;visibility:hidden;pointer-events:none';
+  document.body.appendChild(p);
+  const h = p.getBoundingClientRect().height;
+  p.remove();
+  return Math.abs(h - innerHeight * z) < Math.abs(h - innerHeight);
+}
+function fitZoom() {
+  const z = innerWidth > ZOOM_BASE ? Math.min(innerWidth / ZOOM_BASE, 1.6) : 1;
+  PAGE_ZOOM = z;
+  const root = document.documentElement;
+  if (z > 1) {
+    root.style.zoom = z;
+    if (vhCompensation === null) vhCompensation = probeVhCompensation(z);
+    document.querySelectorAll('.hero4').forEach((h) => {
+      h.style.minHeight = vhCompensation ? Math.round(innerHeight / z) + 'px' : '';
+    });
+  } else {
+    root.style.zoom = '';
+    document.querySelectorAll('.hero4').forEach((h) => { h.style.minHeight = ''; });
+  }
+}
+fitZoom();
+window.addEventListener('resize', fitZoom);
+
 /* verification helper: ?goto=<selector> scrolls there on load */
 const gotoSel = new URLSearchParams(location.search).get('goto');
 if (gotoSel) {
@@ -47,7 +81,7 @@ document.querySelectorAll('.h4-rotator').forEach((rot) => {
 const glow = document.querySelector('.cursor-glow');
 if (glow && !STATIC) {
   window.addEventListener('mousemove', (e) => {
-    glow.style.transform = `translate(${e.clientX - 320}px, ${e.clientY - 320}px)`;
+    glow.style.transform = `translate(${e.clientX / PAGE_ZOOM - 320}px, ${e.clientY / PAGE_ZOOM - 320}px)`;
   });
 }
 
@@ -56,7 +90,7 @@ function makeFlow(canvas, opts) {
   if (!canvas) return;
   const o = Object.assign({ n: 850, alpha: 0.085, fade: 0.045, speed: 1.35, weaveAlpha: 0.028 }, opts);
   const ctx = canvas.getContext('2d');
-  const dpr = Math.min(devicePixelRatio, 1.6);
+  let dpr = Math.min(devicePixelRatio, 1.6);
   let W = 0, H = 0, parts = [];
 
   function field(x, y, t) {
@@ -90,6 +124,7 @@ function makeFlow(canvas, opts) {
   }
   function resize() {
     if (!canvas.offsetWidth) return;
+    dpr = Math.min(devicePixelRatio * PAGE_ZOOM, 2);
     W = canvas.width = canvas.offsetWidth * dpr;
     H = canvas.height = canvas.offsetHeight * dpr;
     parts = Array.from({ length: o.n }, spawn);
@@ -141,12 +176,12 @@ if (!STATIC && (ghosts.length || bioTimeline)) {
       const vh = innerHeight;
       for (const g of ghosts) {
         const r = g.parentElement.getBoundingClientRect();
-        const offset = (r.top + r.height / 2 - vh / 2) * -0.12;
+        const offset = (r.top + r.height / 2 - vh / 2) * -0.12 / PAGE_ZOOM;
         g.style.transform = `translateY(calc(-50% + ${offset.toFixed(1)}px))`;
       }
       if (bioTimeline && bioProgress) {
         const r = bioTimeline.getBoundingClientRect();
-        const passed = Math.min(Math.max(vh * 0.72 - r.top, 0), r.height);
+        const passed = Math.min(Math.max(vh * 0.72 - r.top, 0), r.height) / PAGE_ZOOM;
         bioProgress.style.height = passed.toFixed(0) + 'px';
       }
       ticking = false;
