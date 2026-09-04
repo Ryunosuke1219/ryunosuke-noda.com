@@ -4,10 +4,10 @@ const STATIC = new URLSearchParams(location.search).has('static')
 if (STATIC) document.documentElement.classList.add('static-mode');
 
 /* ---------- desktop zoom normalization ----------
-   デザインの基準幅は1096px（ヒーロー文字のclamp上限が効く幅）。
-   それより広いPC画面では、基準幅レイアウトを等倍拡大して密度を保つ。
-   スマホ・タブレット（<=1096px）には一切影響しない。 */
-const ZOOM_BASE = 1096;
+   PCでは常に一定倍率（1.55）で表示し、ウィンドウを狭めても文字サイズは
+   変わらず列幅だけが狭まる（claude.aiプレビューと同じ挙動）。
+   スマホ・タブレット（<=820px）には一切影響しない。 */
+const DESKTOP_ZOOM = 1.55;
 let PAGE_ZOOM = 1;
 let vhCompensation = null;
 function probeVhCompensation(z) {
@@ -20,7 +20,7 @@ function probeVhCompensation(z) {
   return Math.abs(h - innerHeight * z) < Math.abs(h - innerHeight);
 }
 function fitZoom() {
-  const z = innerWidth > ZOOM_BASE ? Math.min(innerWidth / ZOOM_BASE, 1.6) : 1;
+  const z = innerWidth > 820 ? DESKTOP_ZOOM : 1;
   PAGE_ZOOM = z;
   const root = document.documentElement;
   if (z > 1) {
