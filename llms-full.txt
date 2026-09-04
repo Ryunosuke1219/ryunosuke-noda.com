@@ -1,23 +1,25 @@
 <!-- llms-full.txt — the complete content of https://ryunosuke-noda.com/ for AI assistants.
      Official personal website of Ryunosuke Noda (野田竜之介), MD, PhD.
-     Japanese version first, then English. Last updated: 2026-09-04.
+     Japanese version first, then English. Last updated: 2026-09-05.
      Authoritative achievement list: https://researchmap.jp/nodaryu -->
 # 野田竜之介（Ryunosuke Noda）
 
-腎臓内科医・医療AI研究者。聖マリアンナ医科大学 腎臓・高血圧内科 助教、博士（医学）。特定非営利活動法人 日本医療AIリテラシー協会（JAMAIL）理事長として、医療AIの学びの公共基盤づくりにも取り組む。「AIは医療と医師をどう変えるのか」という問いに、臨床・研究・教育の現場から取り組んでいる。
+腎臓内科医・医療AI研究者。聖マリアンナ医科大学 腎臓・高血圧内科 助教、博士（医学）。特定非営利活動法人 日本医療AIリテラシー協会（JAMAIL）理事長として、医療AIの学びの公共基盤づくりにも取り組んでいる。
+
+---
 
 ## Statement — AIは医療と医師をどう変えるのか
 
 腎臓内科医として診療を行いながら、機械の知性を測ってきた。医学の問いに、AIはどこまで答えられるのか。血液と尿検査の数値から、病をどこまで言い当てられるのか。測るほどに、問いは反転していった。—着目すべきは、機械ではなく、医師の側ではないか。
 
-同じAIを前にして、強くなっていく医師と、衰えていく医師がいる。その分かれ目で、医療の未来が変わるかもしれない。だから、臨床に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
+同じAIを前にして、強くなっていく医師と、衰えていく医師がいる。その分かれ目で、医療の未来が変わるかもしれない。だから、臨床現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
 
 AIによって医療は、医師は、どうなっていくのか。その答えを、当事者として見届けたい。
 
 ## Practice
 
 - **診る（CLINICIAN）** — 全ての問いは、診療現場から始まる。腎臓内科医として診療所から大学病院まで、AIが医療に入っていく現場を見続ける。
-- **測る（RESEARCHER）** — 機械の知性を、医学の問いで測る。生成AIの腎臓領域での性能検証や、腎疾患診断AIの開発に取り組んでいる。
+- **測る（RESEARCHER）** — 機械の知性を、医学の問いで測る。生成AIの腎臓領域での性能検証や、腎疾患の診断・予後予測を行うAIの開発に取り組む。
 - **開く（EDUCATOR）** — 医療AIの学びを、無償で誰にでも。特定非営利活動法人 日本医療AIリテラシー協会の理事長として、学びの公共基盤を育てる。
 
 ## Biography
@@ -33,29 +35,29 @@ AIによって医療は、医師は、どうなっていくのか。その答え
 
 ## Contact（トップページ）
 
-この問いを、一緒に。講演・執筆・取材・共同研究のご相談をお受けしています。
+同じ道を、共に歩む。講演・執筆・取材・共同研究などのご依頼をお受けしています。
 
 ---
 
-# 業績（Portfolio）
+## 業績（Portfolio）
 
 正式・最新の業績一覧は researchmap（https://researchmap.jp/nodaryu）にあります。論文・学会発表は researchmap および各論文のDOIで照合できます。
 
-## 研究の系譜（Research Narrative）
+### 研究の系譜（Research Narrative）
 
-### AIの医学の実力はどのくらいか（2023〜）
+#### AIの医学の実力はどのくらいか（2023〜）
 
 ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAIの医学的な性能を測ってきた。ChatGPT・Bardの評価（*Clinical and Experimental Nephrology*, 2024, 筆頭・責任著者）を皮切りに、GPT-4による医師の意思決定支援（*Scientific Reports*, 2025, 筆頭・責任著者）、o1 proなど推論モデルの評価（*Frontiers in Medicine*, 2025, 筆頭・責任著者）、推論モデルと従来型のモデルの比較（*JMA Journal*, 2026, 最終・責任著者）へと評価系を発展させてきた。
 
-### AIは診断や予後を予測できるか（2024〜）
+#### AIは診断や予後を予測できるか（2024〜）
 
 血液・尿検査という侵襲の少ないデータから腎疾患を診断予測するモデルを、自らコードを書いて開発してきた。IgA腎症の診断予測（*Scientific Reports*, 2024, 筆頭・責任著者）、微小変化型ネフローゼ症候群の診断予測（*Scientific Reports*, 2024, 筆頭・責任著者）を発表。現在は科研費（研究活動スタート支援・若手研究、いずれも研究代表者）により、汎用的な腎臓病診断予測モデルとIgA腎症の動的予後予測モデルの開発を進めている。
 
-### AIで医療はどうなっていくのか（2024〜）
+#### AIで医療はどうなっていくのか（2024〜）
 
 研究で得た知見を、臨床医に届く言葉に変換する仕事をしている。総説論文として腎臓内科における人工知能の現状と展望（日本腎臓学会誌, 2024, 筆頭・責任著者）、医療者・AIエージェント・ロボットの三者協働による血液透析ケアの構想（*Clinical and Experimental Nephrology*, 2026, 筆頭・責任著者）を発表。2026年にはNPO法人日本医療AIリテラシー協会（JAMAIL）を設立した。現在は、「AIは医師の判断力・技能を強めるのか、衰えさせるのか」という問いを、研究として立ち上げている。
 
-## 主な招待講演（抜粋）
+### 主な招待講演（抜粋）
 
 - **2026** 第71回日本透析医学会学術集会 シンポジウム「医療者・AIエージェント・ロボットによる血液透析ケアの再構築」
 - **2026** 第35回日本腎不全外科研究会学術集会 シンポジウム「血液透析領域におけるAIの光と影」
@@ -66,7 +68,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 発表・講演の全一覧は researchmap を参照。
 
-## 委員等
+### 委員等
 
 - 日本医療AIリテラシー協会 理事長
 - 日本腎臓学会 J-YNC（Japan-Young Nephrologist Committee）委員
@@ -74,13 +76,13 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - 日本腎・血液浄化AI学会 評議員・広報編集委員
 - 第6回日本腎・血液浄化AI学会学術集会・総会 プログラム委員
 
-## メディア掲載
+### メディア掲載
 
-- HCPLive (US) “Machine Learning Could Offer Noninvasive, Reliable Diagnostic Tool in IgA Nephropathy” (2024)
-- HCPLive (US) “Machine Learning Could Improve IgA Nephropathy Diagnostics” (2023)
+- HCPLive (US) "Machine Learning Could Offer Noninvasive, Reliable Diagnostic Tool in IgA Nephropathy" (2024)
+- HCPLive (US) "Machine Learning Could Improve IgA Nephropathy Diagnostics" (2023)
 - Health & Medicine Week (NewsRx) ほか、国内外 計8件
 
-## 受賞・コンペティション
+### 受賞・コンペティション
 
 - 第7回全国医療AIコンテスト 準優勝（2位／80チーム、2026）
 - SIGNATE 医学論文自動仕分けチャレンジ 金メダル（2023）／SIGNATE Master
@@ -88,16 +90,16 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - 第18回 前田賞（聖マリアンナ医科大学、2025）
 - 令和6年度 優秀学位論文賞（聖マリアンナ医科大学、2025）
 
-## 書籍
+### 書籍
 
-### 分担執筆
+#### 分担執筆
 
 - 『レジデントのための腎臓病診療マニュアル 第4版』（2025）— 腎臓病診療におけるAIの活用
 - 『腎と透析 99巻2号 特集 IgA腎症のすべて』（2025）— 機械学習によるIgA腎症診断
 - 『腎疾患・透析最新の治療2023-2025』（2023）
 - 『あなたも名医! 輸液製剤の種類と使い方』（2020）
 
-## 主な研究業績（抜粋）
+### 主な研究業績（抜粋）
 
 凡例: ◆＝筆頭著者　■＝最終著者　◎＝責任著者
 
@@ -113,7 +115,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
 - ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
-## 診療
+### 診療（Clinical Practice）
 
 大学病院の高度急性期医療から、クリニックのかかりつけ医、地域の訪問診療まで経験してきた。内科・腎臓・透析の3つの専門医として、診療の現場に立ち続けている。
 
@@ -124,31 +126,35 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - **2021** 聖マリアンナ医科大学 腎臓・高血圧内科 診療助手
 - **2025** 聖マリアンナ医科大学 腎臓・高血圧内科 助教（現職）
 
-### 非常勤医師としての勤務経験
+#### 非常勤医師としての勤務経験
 
 - 宮前平第2クリニック
 - グランハート透析クリニック
 - 新百合ケ丘ガーデンクリニック
+- 登戸クリニック
 - 鷺沼人工腎臓石川クリニック
 - あけぼの病院
+- 静岡医療センター
 
 資格: 日本内科学会 内科専門医／日本腎臓学会 腎臓専門医／日本透析医学会 透析専門医
 
-## 教育
+### 教育（Education）
 
 2023年、医療AIを学ぶための完全無料のオンラインコミュニティ「AcademiX Medical」を有志と創設。オンライン勉強会、Slackでの情報共有を通じて、医療者と技術者が分野を越えて学び合う場を運営してきた。
 
 2026年、この活動を持続可能な公共基盤とするため、特定非営利活動法人日本医療AIリテラシー協会（JAMAIL）を設立し、理事長に就任。医療AIに関する教育・人材育成、情報の発信、分野を越えた交流・連携の促進に取り組んでいる。（JAMAIL公式サイト: https://jamail.or.jp/）
 
-## CV
+### CV
 
-正式な履歴書・業績一覧は、CV 日本語版（PDF）および CV — English (PDF) から。
+正式な履歴書・業績一覧は、CV 日本語版（PDF）・CV — English (PDF) から入手できる。
 
 ---
 
-# Contact（お問い合わせ）
+## Contact（お問い合わせ）
 
-講演・執筆・取材・共同研究のご依頼をお受けしています。フォームよりお問い合わせを受け付けている。
+AIで医療と医師はどう変わるのか。この問いに共に挑む。
+
+講演・執筆・取材・共同研究などのご依頼をお受けしています。サイトのフォームよりお問い合わせください。受け付けている用件の種別: 講演・研修のご依頼／執筆のご依頼／取材・出演のご依頼／共同研究・委員就任のご相談／その他のお仕事のご依頼。
 
 ※診療に関する個別のご相談にはお応えできません。おかかりの医療機関にご相談ください。
 
@@ -156,7 +162,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 # Ryunosuke Noda, MD, PhD
 
-Ryunosuke Noda is a nephrologist and medical AI researcher, serving as Assistant Professor in the Division of Nephrology and Hypertension at St. Marianna University School of Medicine. He works at the intersection of clinical practice, research, and education, and is the Founding President of the Japanese Association for Medical AI Literacy (JAMAIL). His work centers on the question: "How will AI change medicine — and physicians?"
+Ryunosuke Noda is a nephrologist, medical AI researcher, and educator based in Japan. He is an Assistant Professor in the Division of Nephrology and Hypertension at St. Marianna University School of Medicine, and the founding president of the Japanese Association for Medical AI Literacy (JAMAIL). His work spans clinical nephrology practice, research on the performance evaluation of generative AI in medicine and AI-based diagnosis and prognosis prediction of kidney disease, and free, open medical AI education.
 
 ## Statement
 
@@ -171,7 +177,7 @@ How will medicine — and physicians — change with AI? I want to witness the a
 ## Practice
 
 - **診る (CLINICIAN)** — Every question begins at the bedside. As a nephrologist practicing everywhere from neighborhood clinics to a university hospital, I keep watching the front line where AI enters medicine.
-- **測る (RESEARCHER)** — Measuring machine intelligence with the questions of medicine — working on performance evaluation of generative AI in nephrology and development of diagnostic AI for kidney diseases.
+- **測る (RESEARCHER)** — Measuring machine intelligence with the questions of medicine — working on performance evaluation of generative AI in nephrology and development of AI for diagnosis and prognosis prediction of kidney disease.
 - **開く (EDUCATOR)** — Opening medical AI education to everyone, free of charge. As founding president of the Japanese Association for Medical AI Literacy (JAMAIL), I cultivate a public foundation for learning.
 
 ## Biography
@@ -183,15 +189,15 @@ How will medicine — and physicians — change with AI? I want to witness the a
 - **2025** — Received PhD (Medicine); appointed Assistant Professor, Division of Nephrology and Hypertension, St. Marianna University School of Medicine.
 - **2026** — Established the Japanese Association for Medical AI Literacy (JAMAIL); appointed founding president.
 
-Full lists of publications, lectures, and awards: Portfolio, researchmap, and the CV in English (PDF).
+Full lists of publications, lectures, and awards: Portfolio, researchmap (https://researchmap.jp/nodaryu), and the CV in English (PDF).
 
 ## Contact
 
-Let's pursue this question — together. Inquiries for speaking, writing, media, and research collaboration are welcome, in English or Japanese.
+Walking the same road, together. Inquiries for speaking, writing, media, and research collaboration are welcome, in English or Japanese.
 
 ## Portfolio
 
-The official, up-to-date list of achievements is on researchmap. Publications and presentations can be verified on researchmap and via each paper's DOI.
+The official, up-to-date list of achievements is on researchmap (https://researchmap.jp/nodaryu). Publications and presentations can be verified on researchmap and via each paper's DOI.
 
 ### Research Narrative
 
@@ -276,13 +282,15 @@ From advanced acute care at a university hospital to primary care at community c
 - **2021** — Clinical Assistant, Division of Nephrology and Hypertension, St. Marianna University School of Medicine
 - **2025** — Assistant Professor, Division of Nephrology and Hypertension, St. Marianna University School of Medicine (current)
 
-Part-time clinical experience:
+#### Part-time clinical experience
 
 - Miyamaedaira Dai-ni Clinic
 - Gran Heart Dialysis Clinic
 - Shin-Yurigaoka Garden Clinic
+- Noborito Clinic
 - Saginuma Ishikawa Artificial Kidney Clinic
 - Akebono Hospital
+- Shizuoka Medical Center
 
 Board-certified: Internal Medicine (Japanese Society of Internal Medicine) / Nephrology (Japanese Society of Nephrology) / Dialysis (Japanese Society for Dialysis Therapy)
 
@@ -290,12 +298,12 @@ Board-certified: Internal Medicine (Japanese Society of Internal Medicine) / Nep
 
 In 2023, I co-founded AcademiX Medical, a completely free online community for learning medical AI. Through online study sessions and information sharing on Slack, it has become a place where medical professionals and engineers learn from one another across disciplines.
 
-In 2026, to turn this activity into a sustainable public foundation, I established the Japanese Association for Medical AI Literacy (JAMAIL) and became its founding president — working on education and human resource development in medical AI, information sharing, and cross-disciplinary collaboration.
+In 2026, to turn this activity into a sustainable public foundation, I established the Japanese Association for Medical AI Literacy (JAMAIL) and became its founding president — working on education and human resource development in medical AI, information sharing, and cross-disciplinary collaboration. (JAMAIL Official Site: https://jamail.or.jp/)
 
 ### CV
 
-The formal curriculum vitae with full lists of achievements is available as a CV in English (PDF) and Japanese (PDF).
+The formal curriculum vitae with full lists of achievements is available as CV — English (PDF) and CV — Japanese (PDF).
 
 ## Contact Policy
 
-Inquiries for speaking, writing, media, and research collaboration are welcome, in English or Japanese. Note: I cannot respond to individual medical consultations. Please consult your healthcare provider.
+Inquiries for speaking, writing, media, and research collaboration are welcome, in English or Japanese. Please use the contact form. Note: I cannot respond to individual medical consultations. Please consult your healthcare provider.
