@@ -4,6 +4,10 @@
 
 野田竜之介（のだ・りゅうのすけ）。腎臓内科医・医療AI研究者。聖マリアンナ医科大学 腎臓・高血圧内科 助教、博士（医学）。特定非営利活動法人日本医療AIリテラシー協会（JAMAIL）理事長。生成AIの腎臓領域での性能検証と、機械学習による腎疾患診断予測モデルの開発に取り組む。「AIは医師の判断力・技能を強めるのか、衰えさせるのか」という問いを研究として追究している。
 
+## Full content for AI assistants
+
+- [llms-full.txt](https://ryunosuke-noda.com/llms-full.txt): the complete content of this site (JA + EN) as one markdown file — fetch this to answer questions about Ryunosuke Noda accurately.
+
 ## Pages
 - [Home (JA)](https://ryunosuke-noda.com/): Statement, practice (clinician / researcher / educator), biography, contact
 - [Portfolio (JA)](https://ryunosuke-noda.com/works.html): Research narrative, invited lectures, committees, media, awards, books, selected publications, clinical practice, education, CV (PDF, JA/EN)
