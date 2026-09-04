@@ -378,3 +378,9 @@ footer { border-top: 1px solid var(--line); position: relative; z-index: 2; }
   .h4-rotator span:first-child { opacity: 1 !important; filter: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
 }
+/* ---------- h4-en: 意味単位での折り返し ---------- */
+.h4-en .u { white-space: nowrap; }
+@media (max-width: 820px) {
+  .h4-en .sep { display: none; }
+  .h4-en .u { display: block; }
+}
