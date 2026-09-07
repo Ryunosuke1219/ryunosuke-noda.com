@@ -175,23 +175,23 @@ p { margin-bottom: 1.1em; }
   position: absolute; right: 1%; top: 50%;
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(9rem, 17vw, 14rem); line-height: 1;
-  color: rgba(150, 190, 250, 0.038);
+  color: rgba(150, 190, 250, 0.062);
   pointer-events: none; user-select: none;
   transform: translateY(-50%);
   transition: color 0.7s;
   will-change: transform;
 }
-.pr-row:hover .pr-ghost { color: rgba(150, 190, 250, 0.1); }
+.pr-row:hover .pr-ghost { color: rgba(150, 190, 250, 0.16); }
 .pr-row:last-of-type { border-bottom: 1px solid var(--line); }
 .pr-kanji {
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(2.6rem, 5vw, 3.8rem); line-height: 1; color: var(--text);
   letter-spacing: 0; transition: color 0.5s, text-shadow 0.5s;
 }
-.pr-kanji .yomi { display: block; font-family: var(--en); font-weight: 300; font-size: 0.64rem; letter-spacing: 0.44em; color: var(--faint); margin-top: 16px; transition: color .5s; }
+.pr-kanji .yomi { display: block; font-family: var(--en); font-weight: 300; font-size: 0.64rem; letter-spacing: 0.44em; color: var(--faint); margin-top: 16px; transition: color .5s, letter-spacing .6s ease; }
 .pr-body { color: var(--dim); font-size: 0.96rem; line-height: 2.2; max-width: 36em; transition: color .5s; }
 .pr-body b { color: var(--text); font-weight: 500; }
-.pr-arrow { font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.9rem; transition: color .4s, transform .4s; }
+.pr-arrow { font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.9rem; transition: color .4s, transform .4s, opacity .4s; }
 .pr-row:hover { background: rgba(140, 175, 230, 0.025); }
 .pr-row:hover .pr-kanji { color: var(--bright); text-shadow: 0 0 34px rgba(160, 195, 250, 0.35); }
 .pr-row:hover .pr-kanji .yomi { color: var(--dim); }
@@ -223,7 +223,11 @@ p { margin-bottom: 1.1em; }
 .bio-more a:hover { color: var(--accent); }
 
 /* ---------- contact (top) ---------- */
-.contact4 { text-align: center; position: relative; overflow: hidden; }
+.contact4 {
+  text-align: center; position: relative; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 100vh;   /* 全画面のフィナーレ。zoom時の補正はmain.jsのfitZoomが行う */
+}
 .contact4 .flow-bg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .contact4 .c4-veil {
   position: absolute; inset: 0; pointer-events: none;
@@ -231,7 +235,7 @@ p { margin-bottom: 1.1em; }
 }
 .contact4 .c4-inner { position: relative; z-index: 2; }
 .contact4 .c4-line {
-  font-family: var(--serif); font-weight: 600;
+  font-family: var(--serif); font-weight: 600; color: #fff;
   font-size: clamp(1.5rem, 3.2vw, 2.2rem); letter-spacing: 0.16em; margin-bottom: 40px;
 }
 .contact4 p { color: var(--dim); max-width: 560px; margin-left: auto; margin-right: auto; }
@@ -311,7 +315,7 @@ p { margin-bottom: 1.1em; }
 .bio-text .lead { color: var(--text); }
 .bio-flex .photo-placeholder { flex: 0 0 250px; }
 .cta-strip { text-align: left; }
-.cta-strip .cta-title { font-family: var(--serif); font-size: clamp(1.3rem, 2.8vw, 1.8rem); margin-bottom: 20px; letter-spacing: .08em; }
+.cta-strip .cta-title { font-family: var(--serif); font-size: clamp(1.3rem, 2.8vw, 1.8rem); margin-bottom: 20px; letter-spacing: .08em; color: #fff; }
 .cta-strip p { max-width: 640px; color: var(--dim); }
 
 /* ---------- contact form ---------- */
@@ -378,6 +382,19 @@ footer { border-top: 1px solid var(--line); position: relative; z-index: 2; }
   .h4-rotator span:first-child { opacity: 1 !important; filter: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
 }
+/* ---------- practice rows: cinematic page-out（クリック→残光が灯って暗転→遷移） ---------- */
+.leave-veil {
+  position: fixed; inset: 0; z-index: 90; background: #030407;
+  opacity: 0; transition: opacity .5s ease; pointer-events: none;
+}
+.leave-veil.on { opacity: 1; }
+.pr-row.pr-leave { background: rgba(140, 175, 230, 0.045); }
+.pr-row.pr-leave .pr-kanji { color: var(--bright); text-shadow: 0 0 46px rgba(160, 195, 250, 0.55); }
+.pr-row.pr-leave .pr-kanji .yomi { color: var(--dim); letter-spacing: 0.62em; }
+.pr-row.pr-leave .pr-body { color: #aeb9c9; }
+.pr-row.pr-leave .pr-arrow { color: var(--bright); transform: translateX(16px); opacity: 0; }
+.pr-row.pr-leave .pr-ghost { color: rgba(150, 190, 250, 0.26); }
+
 /* ---------- portfolio: readable column width（PC実効幅1240px前後で本文が全幅に達しないよう制限） ---------- */
 .works-page .section,
 .works-page .page-head { max-width: 860px; }
