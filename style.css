@@ -281,18 +281,18 @@ p { margin-bottom: 1.1em; }
 .tag.alt { color: var(--cyan); }
 .timeline-list { list-style: none; }
 .timeline-list li {
-  padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--dim);
-  display: grid; grid-template-columns: 60px 1fr; align-items: baseline;
-  text-wrap: balance;   /* 2行になる項目は行長を均等に分ける（1行項目には影響なし） */
+  padding: 11px 0 11px 60px; position: relative; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--dim);
+  word-break: auto-phrase;   /* 日本語を文節単位で折り返す（対応ブラウザのみ・非対応は通常折返し） */
 }
-.timeline-list .year { font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.84rem; letter-spacing: .1em; }
+.timeline-list .year { position: absolute; left: 0; top: 11px; font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.84rem; letter-spacing: .1em; line-height: 2.3; }
 .plain-list { list-style: none; }
-.plain-list li { padding: 7px 0 7px 20px; position: relative; font-size: 0.92rem; color: var(--dim); }
+.plain-list li { padding: 7px 0 7px 20px; position: relative; font-size: 0.92rem; color: var(--dim); word-break: auto-phrase; }
 .plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--faint); font-size: .8em; top: .95em; }
 .paper-list { list-style: none; font-size: 0.86rem; }
 .paper-list li { padding: 11px 0; border-bottom: 1px solid var(--line); color: var(--faint); }
 .paper-list li b { color: var(--dim); font-weight: 500; }
 .mark { color: var(--accent); font-weight: 500; margin-right: 6px; font-size: .85em; }
+.nw { white-space: nowrap; }   /* 施設名・学会名など、途中で改行させない語句 */
 .more-link { display: inline-block; margin-top: 16px; font-size: 0.85rem; }
 
 /* ---------- contact page blocks ---------- */

@@ -84,6 +84,14 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
 - ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
+### 研究資金（研究代表者）
+
+- 科研費 若手研究「深層学習を用いたIgA腎症の動的予後予測モデルの開発と臨床的有用性の評価」（26K19349、2026–2029年度）
+- 科研費 研究活動スタート支援「機械学習を用いた低侵襲かつ汎用的な腎臓病診断予測モデルの開発」（25K23943、2025–2026年度）
+- 立石科学技術振興財団 研究助成(C)（2023–2024年度）
+- 聖マリアンナ医科大学 大学院研究支援（2023年度）
+- 西川医療振興財団 医学研究活動費助成（2022–2023年度）
+
 ### 委員等
 
 - 日本医療AIリテラシー協会 理事長
@@ -239,6 +247,14 @@ Legend: ◆ first author　■ last author　◎ corresponding author
 - ◆◎ Performance of ChatGPT and Bard in self-assessment questions for nephrology board renewal. *Clinical and Experimental Nephrology* (2024)
 - ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
 - ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
+
+### Research Funding (Principal Investigator)
+
+- JSPS KAKENHI, Grant-in-Aid for Early-Career Scientists (26K19349, FY2026–2029) — deep learning-based dynamic prognostic modeling for IgA nephropathy
+- JSPS KAKENHI, Research Activity Start-up (25K23943, FY2025–2026) — machine learning-based diagnostic prediction models for kidney disease
+- Tateisi Science and Technology Foundation, Research Grant (C) (FY2023–2024)
+- St. Marianna University School of Medicine, Graduate Research Support (FY2023)
+- Nishikawa Medical Foundation, Medical Research Grant (FY2022–2023)
 
 ### Leadership & Committees
 
