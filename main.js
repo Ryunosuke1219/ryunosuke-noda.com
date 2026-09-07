@@ -327,12 +327,22 @@ if (!STATIC && bioTimeline) {
       const vh = innerHeight;
       if (bioTimeline && bioProgress) {
         const r = bioTimeline.getBoundingClientRect();
-        const passed = Math.min(Math.max(vh * 0.72 - r.top, 0), r.height) / PAGE_ZOOM;
-        bioProgress.style.height = passed.toFixed(0) + 'px';
+        const localHeight = parseFloat(getComputedStyle(bioTimeline).height);
+        if (localHeight > 0 && r.height > 0) {
+          /* 旧SafariはCSS zoomを除いた矩形を返す。実測倍率で座標を揃え、二重補正を防ぐ。 */
+          const rectScale = r.height / localHeight;
+          const documentTop = (r.top + scrollY) / rectScale;
+          const passed = Math.min(Math.max((vh * 0.72 + scrollY) / PAGE_ZOOM - documentTop, 0), localHeight);
+          bioProgress.style.height = passed.toFixed(0) + 'px';
+        }
       }
       ticking = false;
     });
   }
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('pageshow', onScroll);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', onScroll);
+  new ResizeObserver(onScroll).observe(bioTimeline);
   onScroll();
 }
