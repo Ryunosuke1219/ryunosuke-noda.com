@@ -41,7 +41,7 @@ AIによって医療は、医師は、どうなっていくのか。その答え
 
 ## 業績（Portfolio）
 
-正式・最新の業績一覧は researchmap（https://researchmap.jp/nodaryu）にあります。論文・学会発表は researchmap および各論文のDOIで照合できます。
+正式・最新の業績一覧は researchmap（https://researchmap.jp/nodaryu）および CV（PDF: https://ryunosuke-noda.com/cv/CV_ja.pdf）にあります。論文・学会発表は researchmap および各論文のDOIで照合できます。
 
 ### 研究の系譜（Research Narrative）
 
@@ -67,6 +67,22 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - **2024** 第29回腎不全の医療ネットワークを考える会 基調講演「医療界のAI革命」
 
 発表・講演の全一覧は researchmap を参照。
+
+### 主な研究業績（抜粋）
+
+凡例: ◆＝筆頭著者　■＝最終著者　◎＝責任著者
+
+- ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
+- ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
+- ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
+- ◆◎ GPT-4's performance in supporting physician decision-making in nephrology multiple-choice questions. *Scientific Reports* (2025)
+- ◆◎ 腎臓病診断における機械学習の有用性の検証. 日本腎・血液浄化AI学会会誌 (2025)
+- ◆◎ Machine learning-based diagnostic prediction of minimal change disease: model development study. *Scientific Reports* (2024)
+- ◆◎ 腎臓内科における人工知能の現状と展望. 日本腎臓学会誌 66(5) (2024)
+- ◆◎ Machine learning-based diagnostic prediction of IgA nephropathy: model development and validation study. *Scientific Reports* (2024)
+- ◆◎ Performance of ChatGPT and Bard in self-assessment questions for nephrology board renewal. *Clinical and Experimental Nephrology* (2024)
+- ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
+- ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
 ### 委員等
 
@@ -98,22 +114,6 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - 『腎と透析 99巻2号 特集 IgA腎症のすべて』（2025）— 機械学習によるIgA腎症診断
 - 『腎疾患・透析最新の治療2023-2025』（2023）
 - 『あなたも名医! 輸液製剤の種類と使い方』（2020）
-
-### 主な研究業績（抜粋）
-
-凡例: ◆＝筆頭著者　■＝最終著者　◎＝責任著者
-
-- ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
-- ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
-- ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
-- ◆◎ GPT-4's performance in supporting physician decision-making in nephrology multiple-choice questions. *Scientific Reports* (2025)
-- ◆◎ 腎臓病診断における機械学習の有用性の検証. 日本腎・血液浄化AI学会会誌 (2025)
-- ◆◎ Machine learning-based diagnostic prediction of minimal change disease: model development study. *Scientific Reports* (2024)
-- ◆◎ 腎臓内科における人工知能の現状と展望. 日本腎臓学会誌 66(5) (2024)
-- ◆◎ Machine learning-based diagnostic prediction of IgA nephropathy: model development and validation study. *Scientific Reports* (2024)
-- ◆◎ Performance of ChatGPT and Bard in self-assessment questions for nephrology board renewal. *Clinical and Experimental Nephrology* (2024)
-- ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
-- ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
 ### 診療（Clinical Practice）
 
@@ -197,7 +197,7 @@ Walking the same road, together. Inquiries for speaking, writing, media, and res
 
 ## Portfolio
 
-The official, up-to-date list of achievements is on researchmap (https://researchmap.jp/nodaryu). Publications and presentations can be verified on researchmap and via each paper's DOI.
+The official, up-to-date list of achievements is on researchmap (https://researchmap.jp/nodaryu) and in the CV (PDF: https://ryunosuke-noda.com/cv/CV_en.pdf). Publications and presentations can be verified on researchmap and via each paper's DOI.
 
 ### Research Narrative
 
@@ -223,6 +223,22 @@ This is the work of translating research findings into words that reach practici
 - **2024** — Keynote Lecture, the 29th Meeting of the Kidney Failure Medical Network — "The AI revolution in medicine"
 
 Full list of presentations and lectures on researchmap.
+
+### Selected Publications
+
+Legend: ◆ first author　■ last author　◎ corresponding author
+
+- ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
+- ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
+- ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
+- ◆◎ GPT-4's performance in supporting physician decision-making in nephrology multiple-choice questions. *Scientific Reports* (2025)
+- ◆◎ Verification of the usefulness of machine learning for kidney disease diagnosis. *Journal of JAINBP* (2025) [in Japanese]
+- ◆◎ Machine learning-based diagnostic prediction of minimal change disease: model development study. *Scientific Reports* (2024)
+- ◆◎ Current status and prospects of artificial intelligence in nephrology. *Japanese Journal of Nephrology* (2024) [in Japanese]
+- ◆◎ Machine learning-based diagnostic prediction of IgA nephropathy: model development and validation study. *Scientific Reports* (2024)
+- ◆◎ Performance of ChatGPT and Bard in self-assessment questions for nephrology board renewal. *Clinical and Experimental Nephrology* (2024)
+- ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
+- ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
 ### Leadership & Committees
 
@@ -254,22 +270,6 @@ Full list of presentations and lectures on researchmap.
 - Kidney and Dialysis, Vol. 99(2): IgA Nephropathy (2025) — Machine learning-based diagnosis of IgA nephropathy [in Japanese]
 - Latest Therapy for Kidney Disease and Dialysis 2023-2025 (2023) [in Japanese]
 - Types and Usage of Infusion Preparations (2020) [in Japanese]
-
-### Selected Publications
-
-Legend: ◆ first author　■ last author　◎ corresponding author
-
-- ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
-- ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
-- ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
-- ◆◎ GPT-4's performance in supporting physician decision-making in nephrology multiple-choice questions. *Scientific Reports* (2025)
-- ◆◎ Verification of the usefulness of machine learning for kidney disease diagnosis. *Journal of JAINBP* (2025) [in Japanese]
-- ◆◎ Machine learning-based diagnostic prediction of minimal change disease: model development study. *Scientific Reports* (2024)
-- ◆◎ Current status and prospects of artificial intelligence in nephrology. *Japanese Journal of Nephrology* (2024) [in Japanese]
-- ◆◎ Machine learning-based diagnostic prediction of IgA nephropathy: model development and validation study. *Scientific Reports* (2024)
-- ◆◎ Performance of ChatGPT and Bard in self-assessment questions for nephrology board renewal. *Clinical and Experimental Nephrology* (2024)
-- ◆◎ Renovascular hypertension secondary to massive iliopsoas hematoma. *Kidney International* (2022)
-- ◆◎ Granuloma formation after peritoneal dialysis catheter-related infection by *Mycobacterium chelonae*. *Kidney International* (2021)
 
 ### Clinical Practice
 
