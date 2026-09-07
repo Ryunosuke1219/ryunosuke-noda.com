@@ -280,8 +280,12 @@ p { margin-bottom: 1.1em; }
 }
 .tag.alt { color: var(--cyan); }
 .timeline-list { list-style: none; }
-.timeline-list li { padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--dim); }
-.timeline-list .year { display: inline-block; width: 60px; font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.84rem; letter-spacing: .1em; }
+.timeline-list li {
+  padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--dim);
+  display: grid; grid-template-columns: 60px 1fr; align-items: baseline;
+  text-wrap: balance;   /* 2行になる項目は行長を均等に分ける（1行項目には影響なし） */
+}
+.timeline-list .year { font-family: var(--en); font-weight: 300; color: var(--faint); font-size: 0.84rem; letter-spacing: .1em; }
 .plain-list { list-style: none; }
 .plain-list li { padding: 7px 0 7px 20px; position: relative; font-size: 0.92rem; color: var(--dim); }
 .plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--faint); font-size: .8em; top: .95em; }
@@ -397,7 +401,7 @@ footer { border-top: 1px solid var(--line); position: relative; z-index: 2; }
 
 /* ---------- portfolio: readable column width（PC実効幅1240px前後で本文が全幅に達しないよう制限） ---------- */
 .works-page .section,
-.works-page .page-head { max-width: 860px; }
+.works-page .page-head { max-width: 900px; }   /* 招待講演の最長タイトルが1行に収まる幅 */
 
 /* ---------- h4-en: 意味単位での折り返し ---------- */
 .h4-en .u { white-space: nowrap; }
