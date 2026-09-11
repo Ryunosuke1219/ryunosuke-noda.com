@@ -35,7 +35,7 @@ AIによって医療は、医師は、どうなっていくのか。その答え
 
 ## Contact（トップページ）
 
-同じ道を、共に歩む。講演・執筆・取材などのご依頼をお受けしています。
+同じ道を、共に歩む。
 
 ---
 
@@ -161,9 +161,9 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 AIで医療と医師はどう変わるのか。この問いに共に挑む。
 
-講演・執筆・取材などのご依頼をお受けしています。サイトのフォームよりお問い合わせください。受け付けている用件の種別: 講演・研修のご依頼／執筆のご依頼／取材・出演のご依頼／委員就任のご相談／その他のお仕事のご依頼。
+講演・執筆・取材などのご依頼をお受けしています。サイトのフォームよりお問い合わせください。受け付けている用件の種別: 講演のご依頼／執筆のご依頼／取材・出演のご依頼／顧問・役員就任のご依頼／その他のお仕事のご依頼。
 
-※診療に関する個別のご相談にはお応えできません。おかかりの医療機関にご相談ください。
+※すべてのお問い合わせにお返事できない場合がございます。あらかじめご了承ください。
 
 ---
 
@@ -200,7 +200,7 @@ Full lists of publications, lectures, and awards: Portfolio, researchmap (https:
 
 ## Contact
 
-Walking the same road, together. Inquiries for speaking, writing, and media coverage are welcome, in English or Japanese.
+Walking the same road, together.
 
 ## Portfolio
 
@@ -320,4 +320,4 @@ The formal curriculum vitae with full lists of achievements is available as CV �
 
 ## Contact Policy
 
-Inquiries for speaking, writing, and media coverage are welcome, in English or Japanese. Please use the contact form. Note: I cannot respond to individual medical consultations. Please consult your healthcare provider.
+Inquiries for speaking, writing, and media coverage are welcome, in English or Japanese. Please use the contact form. Please note that I may not be able to reply to every inquiry. Thank you for your understanding.

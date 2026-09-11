@@ -246,6 +246,7 @@ p { margin-bottom: 1.1em; }
   border-bottom: 1px solid var(--line2); padding-bottom: 8px;
   transition: color .4s, border-color .4s;
 }
+.contact4 .c4-line + .c4-link { margin-top: 0; }
 .c4-link:hover { color: var(--bright); border-color: var(--bright); }
 
 /* ---------- buttons (subpages) ---------- */
