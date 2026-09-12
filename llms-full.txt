@@ -12,7 +12,7 @@
 
 腎臓内科医として診療を行いながら、機械の知性を測ってきた。医学の問いに、AIはどこまで答えられるのか。血液と尿検査の数値から、病をどこまで言い当てられるのか。測るほどに、問いは反転していった。—着目すべきは、機械ではなく、医師の側ではないか。
 
-同じAIを前にして、強くなっていく医師と、衰えていく医師がいる。その分かれ目で、医療の未来が変わるかもしれない。だから、臨床現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
+同じAIを前にして、強くなっていく医師と、衰えていく医師がいる。その分かれ目で、医療が大きく変わるかもしれない。だから、臨床現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
 
 AIによって医療は、医師は、どうなっていくのか。その答えを、当事者として見届けたい。
 
@@ -177,7 +177,7 @@ How will AI change medicine — and physicians?
 
 As a nephrologist in daily practice, I have been measuring the intelligence of machines. How well can AI answer the questions of medicine? How accurately can it read disease from blood and urine tests? The more I measured, the more the question inverted itself — perhaps what deserves attention is not the machine, but the physician.
 
-Before the same AI, some physicians will grow stronger while others will decline. On that divide, the future of medicine may turn. So I remain in clinical practice, verify through research, and build an open commons of learning for everyone.
+Before the same AI, some physicians will grow stronger while others will decline. On that divide, medicine may change significantly. So I remain in clinical practice, verify through research, and build an open commons of learning for everyone.
 
 How will medicine — and physicians — change with AI? I want to witness the answer as a participant.
 
