@@ -412,11 +412,23 @@ footer { border-top: 1px solid var(--line); position: relative; z-index: 2; }
   .h4-en .u { display: block; }
 }
 
-/* Midnight preview: an opaque common ground with original light composited above it. */
+/* One continuous night-sky ground; no opaque section plates. */
 .band-line, footer { border-top-color: transparent; }
-.hero4, .contact4 { background: var(--bg); isolation: isolate; }
-.hero4 canvas, .contact4 .flow-bg {
-  mix-blend-mode: lighten;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 120px, #000 calc(100% - 120px), transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 120px, #000 calc(100% - 120px), transparent);
+.hero4 ~ .band { background: transparent; }
+.hero4, .contact4 { background: transparent; isolation: auto; z-index: auto; }
+.hero4 canvas, .contact4 .flow-bg,
+.hero4::after, .contact4 .c4-veil {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent), linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent), linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+.hero4 canvas, .contact4 .flow-bg { mix-blend-mode: lighten; }
+
+/* Keep the return location without drawing a box around the whole practice row. */
+a.pr-row:focus { outline: none; }
+a.pr-row:focus-visible .pr-kanji {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
