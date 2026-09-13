@@ -160,9 +160,10 @@ function makeFlow(canvas, opts) {
 makeFlow(document.getElementById('flow-canvas'));
 
 /* ---------- contact: 「同じ道を、共に歩む。」— 全流線が一つの消失点（道の先）へ収束する ---------- */
-function makeRoadFlow(canvas) {
+function makeRoadFlow(canvas, opts) {
   if (!canvas) return null;
-  const N = 340, FADE = 0.06, SPEED = 1.5;   /* 色はBiographyの進捗線と同系（accent 169,198,242） */
+  const o = Object.assign({ n: 340, fade: 0.06, speed: 1.5, alpha: 1, enterBoost: 2.4, anchor: ".c4-line" }, opts);
+  const N = o.n, FADE = o.fade, SPEED = o.speed;   /* 色はBiographyの進捗線と同系（accent 169,198,242） */
   const ctx = canvas.getContext('2d');
   let dpr = Math.min(devicePixelRatio, 1.6);
   let W = 0, H = 0, parts = [];
@@ -178,7 +179,7 @@ function makeRoadFlow(canvas) {
   /* 収束点＝「同じ道を、共に歩む。」（.c4-line）の実位置に追従 */
   let vpx = 0.5, vpy = 0.5;
   function locateVP() {
-    const line = canvas.parentElement.querySelector('.c4-line');
+    const line = canvas.parentElement.querySelector(o.anchor);
     if (!line) return;
     const cr = canvas.getBoundingClientRect(), lr = line.getBoundingClientRect();
     if (cr.width > 0 && cr.height > 0 && lr.width > 0) {
@@ -208,7 +209,7 @@ function makeRoadFlow(canvas) {
     ctx.save();
     buckets.forEach((seg, i) => {
       if (!seg.length) return;
-      const al = Math.min(levels[i] * alphaScale * Math.min(boost, 1.6), 0.9);
+      const al = Math.min(levels[i] * alphaScale * o.alpha * Math.min(boost, 1.6), 0.9);
       ctx.strokeStyle = `rgba(169, 198, 242, ${al})`;
       ctx.lineWidth = dpr * widths[i];
       if (i === 2) { ctx.shadowColor = 'rgba(169, 198, 242, 0.55)'; ctx.shadowBlur = 9 * dpr; }
@@ -238,7 +239,7 @@ function makeRoadFlow(canvas) {
     const v = entries[0].isIntersecting;
     if (v && !running) { running = true; requestAnimationFrame(frame); }
     else if (!v) { running = false; }
-    if (v && !entered) { entered = true; locateVP(); boost = 2.4; boostTarget = 1; }   /* 初回表示サージ＝道が形になる */
+    if (v && !entered) { entered = true; locateVP(); boost = o.enterBoost; boostTarget = 1; }   /* 初回表示サージ＝道が形になる */
   }, { threshold: 0.02 });
   vis.observe(canvas);
 
@@ -258,6 +259,8 @@ function makeRoadFlow(canvas) {
 }
 
 const roadFlow = makeRoadFlow(document.getElementById('flow-canvas-2'));
+// The same inward paths continue into Contact, without the HOME surge.
+makeRoadFlow(document.getElementById('contact-sky'), { n: 110, speed: .52, alpha: .8, enterBoost: 1, anchor: '.contact-arrival-title' });
 const c4link = document.querySelector('.c4-link');
 if (c4link && roadFlow && !STATIC) {
   c4link.addEventListener('mouseenter', () => roadFlow.setBoost(2.0));   /* リンクに触れると道が流れ出す */

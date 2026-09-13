@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&family=Outfit:wght@200;300&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="contact-page">
 
 <header class="nav">
   <div class="nav-inner">
@@ -33,16 +33,17 @@
 </header>
 
 <main>
+  <canvas id="contact-sky" class="contact-sky" aria-hidden="true"></canvas>
 
   <div class="page-head">
-    <p class="sec-label">Contact</p>
-    <h1 style="line-height:1.9">How will AI change medicine — and physicians?<br>Let's take on this question together.</h1>
+    <p class="sec-label reveal">Contact</p>
+    <h1 class="contact-arrival-title reveal" style="line-height:1.9">How will AI change medicine — and physicians?<br>Let's take on this question together.</h1>
   </div>
 
   <section class="section tight" style="padding-top:30px">
     <div class="cform">
-      <p style="color:var(--dim)">Inquiries for speaking, writing, and media coverage are welcome, in English or Japanese.<br>Please use the contact form below.</p>
-      <p class="notice">Please note that I may not be able to reply to every inquiry. Thank you for your understanding.</p>
+      <p class="reveal" style="color:var(--dim)">Inquiries for speaking, writing, and media coverage are welcome, in English or Japanese.<br>Please use the contact form below.</p>
+      <p class="notice reveal">Please note that I may not be able to reply to every inquiry. Thank you for your understanding.</p>
 
       <form action="https://formsubmit.co/704de5298e5ec9934801c51a5c9f1bdf" method="POST">
         <input type="hidden" name="_subject" value="[Website] Inquiry (EN)">
