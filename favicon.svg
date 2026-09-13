@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#050609"/><text x="32" y="44.5" font-family="'Shippori Mincho','Yu Mincho','Hiragino Mincho ProN',serif" font-weight="500" font-size="40" fill="#eef2f8" text-anchor="middle">N</text><rect x="19" y="51" width="26" height="1.4" fill="rgba(190,210,240,0.65)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+<title>Ryunosuke Noda — N and orbit</title>
+<rect width="64" height="64" fill="#080C1A"/>
+<ellipse cx="32" cy="32" rx="34" ry="11.8" transform="rotate(-45 32 32)" fill="none" stroke="#7E97BA" stroke-width="2.6"/>
+<text x="32" y="46.5" font-family="Times New Roman,serif" font-weight="400" font-size="44" text-anchor="middle" fill="#EEF2F8" stroke="#080C1A" stroke-width="1.25" paint-order="stroke fill">N</text>
+</svg>
