@@ -106,9 +106,22 @@ if (glow && !STATIC) {
     if (!(layerScale > 0)) layerScale = PAGE_ZOOM;
     layerLeft = rect.left;
     layerTop = rect.top;
-    const hiddenTop = hero ? Math.min(layer.clientHeight, Math.max(0, (hero.getBoundingClientRect().bottom - rect.top) / layerScale)) : 0;
-    // Clip the light itself at the hero boundary, including its wide soft edge.
-    layer.style.clipPath = `inset(${Math.ceil(hiddenTop)}px 0 0 0)`;
+    // Keep the introduction unlit, then bring the spotlight in gently through
+    // the Statement's upper space. The boundary remains signed: as it scrolls
+    // above the viewport, the fade follows it instead of sticking to the top.
+    const boundary = hero ? (hero.getBoundingClientRect().bottom - rect.top) / layerScale : -Infinity;
+    const fade = innerWidth <= 820 ? 140 : 180;
+    let mask = 'none';
+    if (boundary + fade > 0) {
+      const stops = Array.from({ length: 17 }, (_, i) => {
+        const t = i / 16;
+        const opacity = t * t * (3 - 2 * t);
+        return `rgba(0, 0, 0, ${opacity.toFixed(4)}) ${(boundary + fade * t).toFixed(2)}px`;
+      });
+      mask = `linear-gradient(to bottom, ${stops.join(', ')})`;
+    }
+    layer.style.maskImage = mask;
+    layer.style.webkitMaskImage = mask;
     positionGlow();
   }
 
