@@ -38,7 +38,7 @@ i { font-style: italic; }
 /* ---------- cursor glow ---------- */
 .cursor-glow {
   position: fixed; top: 0; left: 0; width: 640px; height: 640px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(120, 170, 255, 0.055), transparent 62%);
+  background: radial-gradient(circle, rgba(120, 170, 255, 0.065), transparent 62%);
   pointer-events: none; z-index: 1; mix-blend-mode: screen;
   transition: transform 0.22s ease-out;
   will-change: transform;
@@ -445,4 +445,33 @@ a.pr-row:focus { outline: none; }
 .contact-page .cform > p.reveal { transition-delay: .16s; }
 @media (max-width: 820px) {
   .contact-sky { height: 660px; opacity: .38; }
+}
+
+/* A transparent stroke layer keeps faint lines above the page background. */
+.hero4 canvas { mix-blend-mode: normal; }
+/* Brighter permanent ink; no pulse, crossing light, or glint. */
+.bio-track { background: rgba(140, 170, 215, .18); }
+.bio-progress {
+  background: linear-gradient(180deg, rgba(169, 198, 242, .26), rgba(169, 198, 242, 1));
+}
+.bio-row.reveal.on::before {
+  background: rgba(169, 198, 242, .90);
+  box-shadow: 0 0 5px rgba(169, 198, 242, .25);
+}
+
+/* Shared soft light stays below the content and is clipped out of the hero. */
+.cursor-glow-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+.cursor-glow-layer .cursor-glow {
+  position: absolute;
+  mix-blend-mode: normal;
+}
+.static-mode .cursor-glow-layer { display: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .cursor-glow-layer { display: none !important; }
 }

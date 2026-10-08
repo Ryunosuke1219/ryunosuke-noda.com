@@ -77,18 +77,69 @@ document.querySelectorAll('.h4-rotator').forEach((rot) => {
   }
 });
 
-/* ---------- cursor glow ---------- */
+/* ---------- shared cursor glow; introductory hero stays unlit ---------- */
 const glow = document.querySelector('.cursor-glow');
 if (glow && !STATIC) {
-  window.addEventListener('mousemove', (e) => {
-    glow.style.transform = `translate(${e.clientX / PAGE_ZOOM - 320}px, ${e.clientY / PAGE_ZOOM - 320}px)`;
-  });
-}
+  const layer = document.createElement('div');
+  layer.className = 'cursor-glow-layer';
+  layer.setAttribute('aria-hidden', 'true');
+  glow.before(layer);
+  layer.appendChild(glow);
+  glow.style.opacity = '0';
+  const hero = document.querySelector('.hero4');
+  let layerScale = PAGE_ZOOM;
+  let layerLeft = 0;
+  let layerTop = 0;
+  let lastPointer = null;
+  let clipQueued = false;
+  const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 
+  function positionGlow() {
+    if (!lastPointer) return;
+    glow.style.transform = `translate(${(lastPointer.x - layerLeft) / layerScale - 320}px, ${(lastPointer.y - layerTop) / layerScale - 320}px)`;
+  }
+
+  function updateGlowClip() {
+    clipQueued = false;
+    const rect = layer.getBoundingClientRect();
+    layerScale = layer.clientHeight > 0 ? rect.height / layer.clientHeight : PAGE_ZOOM;
+    if (!(layerScale > 0)) layerScale = PAGE_ZOOM;
+    layerLeft = rect.left;
+    layerTop = rect.top;
+    const hiddenTop = hero ? Math.min(layer.clientHeight, Math.max(0, (hero.getBoundingClientRect().bottom - rect.top) / layerScale)) : 0;
+    // Clip the light itself at the hero boundary, including its wide soft edge.
+    layer.style.clipPath = `inset(${Math.ceil(hiddenTop)}px 0 0 0)`;
+    positionGlow();
+  }
+
+  function scheduleGlowClip() {
+    if (clipQueued) return;
+    clipQueued = true;
+    requestAnimationFrame(updateGlowClip);
+  }
+
+  window.addEventListener('mousemove', (e) => {
+    lastPointer = { x: e.clientX, y: e.clientY };
+    positionGlow();
+    glow.style.opacity = motionPreference.matches ? '0' : '1';
+  });
+  document.documentElement.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
+  window.addEventListener('blur', () => { glow.style.opacity = '0'; });
+  window.addEventListener('scroll', scheduleGlowClip, { passive: true });
+  window.addEventListener('resize', scheduleGlowClip);
+  window.addEventListener('pageshow', scheduleGlowClip);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', scheduleGlowClip);
+  motionPreference.addEventListener('change', () => {
+    glow.style.opacity = !motionPreference.matches && lastPointer ? '1' : '0';
+    scheduleGlowClip();
+  });
+  if (hero) new ResizeObserver(scheduleGlowClip).observe(hero);
+  updateGlowClip();
+}
 /* ---------- flow field factory ---------- */
 function makeFlow(canvas, opts) {
   if (!canvas) return;
-  const o = Object.assign({ n: 850, alpha: 0.085, fade: 0.045, speed: 1.35, weaveAlpha: 0.028 }, opts);   /* 冒頭は暗く——明るさの頂点はContactの道（物語の構成） */
+  const o = Object.assign({ n: 850, alpha: 0.17, fade: 0.045, speed: 1.35, weaveAlpha: 0.028 }, opts);   /* 冒頭は暗く——明るさの頂点はContactの道（物語の構成） */
   const ctx = canvas.getContext('2d');
   let dpr = Math.min(devicePixelRatio, 1.6);
   let W = 0, H = 0, parts = [];
@@ -117,10 +168,29 @@ function makeFlow(canvas, opts) {
     }
     ctx.stroke();
   }
-  function staticWeave() {
-    ctx.fillStyle = '#050609';
+  // Erase only the old ink; do not paint an opaque dark surface underneath it.
+  function fadeTrails() {
+    ctx.save();
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.fillStyle = `rgba(0, 0, 0, ${o.fade})`;
     ctx.fillRect(0, 0, W, H);
-    for (let s = 0; s < 260; s++) stepAndDraw(s * 16, 2.1 * dpr, o.weaveAlpha);
+    ctx.restore();
+  }
+  // Eight-bit alpha can stop decaying at about 11/255. Remove only that spent
+  // ink, before painting the current head, so old paths cannot accumulate.
+  let lastTrailCleanup = 0;
+  function clearSpentTrails() {
+    const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = pixels.data;
+    for (let i = 3; i < data.length; i += 4) {
+      if (data[i] <= 12) data[i] = 0;
+    }
+    ctx.putImageData(pixels, 0, 0);
+  }
+  function staticWeave() {
+    ctx.clearRect(0, 0, W, H);
+    for (let s = 0; s < 260; s++) { fadeTrails(); if (s % 21 === 0) clearSpentTrails(); stepAndDraw(s * 16, o.speed * dpr, o.alpha); }
+    clearSpentTrails();
   }
   function resize() {
     if (!canvas.offsetWidth) return;
@@ -128,8 +198,7 @@ function makeFlow(canvas, opts) {
     W = canvas.width = canvas.offsetWidth * dpr;
     H = canvas.height = canvas.offsetHeight * dpr;
     parts = Array.from({ length: o.n }, spawn);
-    ctx.fillStyle = '#050609';
-    ctx.fillRect(0, 0, W, H);
+    ctx.clearRect(0, 0, W, H);
     if (STATIC) staticWeave();
   }
   window.addEventListener('resize', resize);
@@ -146,8 +215,8 @@ function makeFlow(canvas, opts) {
     if (!running || STATIC) return;
     const cw = Math.round(canvas.offsetWidth * dpr);
     if (!W || Math.abs(cw - W) > 2) { resize(); requestAnimationFrame(frame); return; }
-    ctx.fillStyle = `rgba(5, 6, 9, ${o.fade})`;
-    ctx.fillRect(0, 0, W, H);
+    fadeTrails();
+    if (t - lastTrailCleanup >= 350) { clearSpentTrails(); lastTrailCleanup = t; }
     stepAndDraw(t, o.speed * dpr, o.alpha);
     requestAnimationFrame(frame);
   }
