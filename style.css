@@ -426,8 +426,24 @@ footer { border-top: 1px solid var(--line); position: relative; z-index: 2; }
 }
 .hero4 canvas, .contact4 .flow-bg { mix-blend-mode: lighten; }
 
-/* Keep the return location without drawing a box around the whole practice row. */
-a.pr-row:focus { outline: none; }
+/* Keep restored link focus without the browser's rectangular outline.
+   Keyboard selection stays visible through the existing text palette. */
+a[href]:focus { outline: none; }
+a[href]:focus-visible {
+  color: var(--bright);
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: .22em;
+}
+/* Preserve cues on links with inline text styles or a pale button background. */
+a.source-link:focus-visible { text-decoration-line: underline !important; }
+a.btn-primary:focus-visible { color: #0a1018; text-decoration-color: currentColor; }
+a.pr-row:focus-visible .pr-kanji {
+  color: var(--bright);
+  text-decoration: underline 2px var(--accent);
+  text-underline-offset: .22em;
+}
 
 /* Contact continues the HOME sky, with slower, quieter trails above the form. */
 .contact-page main { position: relative; }
