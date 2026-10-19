@@ -90,7 +90,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - 科研費 研究活動スタート支援「機械学習を用いた低侵襲かつ汎用的な腎臓病診断予測モデルの開発」（25K23943、2025–2026年度）
 - 立石科学技術振興財団 研究助成(C)（2023–2024年度）
 - 聖マリアンナ医科大学 大学院研究支援（2023年度）
-- 西川医療振興財団 医学研究活動費助成事業（一般枠、2022年度）
+- 西川医療振興財団 医学研究活動費助成事業 一般枠（2022年度）
 
 ### 委員等
 
@@ -110,7 +110,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 - ダイバーシティ表彰（学術分野）（聖マリアンナ医科大学、2026）
 - 第7回全国医療AIコンテスト 準優勝（2位／80チーム、2026）
-- SIGNATE「【SOTA】医学論文の自動仕分けチャレンジ」金メダル（2023）／SIGNATE Master
+- SIGNATE 【SOTA】医学論文の自動仕分けチャレンジ 金メダル（2023）／SIGNATE Master
 - 東京大学松尾研究室 GCI 2022 Winter Competition 1 上位入賞（6位／976人）
 - 第18回 前田賞（聖マリアンナ医科大学、2025）
 - 令和6年度 優秀学位論文賞（聖マリアンナ医科大学、2025）
@@ -255,7 +255,7 @@ Legend: ◆ first author　■ last author　◎ corresponding author
 - JSPS KAKENHI, Research Activity Start-up (25K23943, FY2025–2026) — machine learning-based diagnostic prediction models for kidney disease
 - Tateisi Science and Technology Foundation, Research Grant (C) (FY2023–2024)
 - St. Marianna University School of Medicine, Graduate Research Support (FY2023)
-- Nishikawa Medical Foundation, Medical Research Grant (General Category, FY2022)
+- Nishikawa Medical Foundation, Medical Research Grant, General Category (FY2022)
 
 ### Leadership & Committees
 
