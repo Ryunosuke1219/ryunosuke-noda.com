@@ -59,6 +59,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 ### 主な招待講演（抜粋）
 
+- **2026** 第56回日本腎臓学会東部学術大会 シンポジウム「AI時代の医師に求められるサイエンスとアート」
 - **2026** 第35回日本腎不全外科研究会学術集会 シンポジウム「血液透析領域におけるAIの光と影」
 - **2026** 第71回日本透析医学会学術集会 シンポジウム「医療者・AIエージェント・ロボットによる血液透析ケアの再構築」
 - **2026** 第52回日本血液浄化技術学会学術大会 ワークショップ「AIが腎臓内科領域にもたらす光と影」
@@ -107,6 +108,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 ### 受賞・コンペティション
 
+- ダイバーシティ表彰（学術分野）（聖マリアンナ医科大学、2026）
 - 第7回全国医療AIコンテスト 準優勝（2位／80チーム、2026）
 - SIGNATE 医学論文自動仕分けチャレンジ 金メダル（2023）／SIGNATE Master
 - 東京大学松尾研究室 GCI 2022 Winter Competition 1 上位入賞（6位／976人）
@@ -222,6 +224,7 @@ This is the work of translating research findings into words that reach practici
 
 ### Selected Invited Lectures
 
+- **2026** — Symposium, the 56th Eastern Regional Meeting of the Japanese Society of Nephrology — "Science and art required of physicians in the era of AI"
 - **2026** — Symposium, the 35th Annual Meeting of the Japanese Society for Surgery of Renal Failure — "Light and shadow of AI in hemodialysis"
 - **2026** — Symposium, the 71st Annual Meeting of the Japanese Society for Dialysis Therapy — "Rebuilding hemodialysis care with medical staff, AI agents, and robots"
 - **2026** — Workshop, the 52nd Annual Meeting of the Japan Society for Blood Purification Technology — "Light and shadow of AI in nephrology"
@@ -270,6 +273,7 @@ Legend: ◆ first author　■ last author　◎ corresponding author
 
 ### Awards & Competitions
 
+- St. Marianna University School of Medicine Award in Recognition of Academic Work Promoting Diversity (2026)
 - First Runner-up (2nd of 80 teams), the 7th Japan National Medical AI Contest (2026)
 - Gold Medal, SIGNATE Medical Paper Classification Challenge (2023) / SIGNATE Master
 - Top Ranking (6th of 976), GCI 2022 Winter Competition 1, Matsuo Lab, the University of Tokyo
