@@ -59,6 +59,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 ### 主な招待講演（抜粋）
 
+- **2026** 第6回日本腎・血液浄化AI学会学術集会・総会 特別企画「医療AIの学びを、公共財にする ― 若手がつなぐJAMAILとJAINBPの共創」
 - **2026** 第56回日本腎臓学会東部学術大会 シンポジウム「AI時代の医師に求められるサイエンスとアート」
 - **2026** 第35回日本腎不全外科研究会学術集会 シンポジウム「血液透析領域におけるAIの光と影」
 - **2026** 第71回日本透析医学会学術集会 シンポジウム「医療者・AIエージェント・ロボットによる血液透析ケアの再構築」
@@ -97,7 +98,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 - 日本医療AIリテラシー協会 理事長
 - 日本腎臓学会 J-YNC（Japan-Young Nephrologist Committee）委員
 - 日本透析医学会 統計調査委員会 EDC推進検討ワーキンググループ委員
-- 日本腎・血液浄化AI学会 評議員・広報編集委員
+- 日本腎・血液浄化AI学会 評議員・広報編集委員・学術委員
 - 第6回日本腎・血液浄化AI学会学術集会・総会 プログラム委員
 
 ### メディア掲載
@@ -224,6 +225,7 @@ This is the work of translating research findings into words that reach practici
 
 ### Selected Invited Lectures
 
+- **2026** — Special Session, the 6th Annual Meeting of the Japanese Society of Artificial Intelligence in Nephrology and Blood Purification — "Making medical AI learning a public good — early-career professionals bringing JAMAIL and JAINBP together"
 - **2026** — Symposium, the 56th Eastern Regional Meeting of the Japanese Society of Nephrology — "Science and art required of physicians in the era of AI"
 - **2026** — Symposium, the 35th Annual Meeting of the Japanese Society for Surgery of Renal Failure — "Light and shadow of AI in hemodialysis"
 - **2026** — Symposium, the 71st Annual Meeting of the Japanese Society for Dialysis Therapy — "Rebuilding hemodialysis care with medical staff, AI agents, and robots"
@@ -262,7 +264,7 @@ Legend: ◆ first author　■ last author　◎ corresponding author
 - President, Japanese Association for Medical AI Literacy (JAMAIL)
 - Member, Japan-Young Nephrologist Committee (J-YNC), Japanese Society of Nephrology
 - Member, EDC Promotion Working Group, Statistical Survey Committee, Japanese Society for Dialysis Therapy
-- Councilor and Member of the Public Relations & Editorial Committee, Japanese Society of Artificial Intelligence in Nephrology and Blood Purification (JAINBP)
+- Councilor and Member of the Public Relations & Editorial Committee and the Academic Committee, Japanese Society of Artificial Intelligence in Nephrology and Blood Purification (JAINBP)
 - Program Committee Member, the 6th Annual Meeting of JAINBP
 
 ### Media Coverage
