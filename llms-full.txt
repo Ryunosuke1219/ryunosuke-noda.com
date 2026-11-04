@@ -74,6 +74,7 @@ ChatGPTの登場直後から、腎臓内科の筆記試験問題を用いてAI�
 
 凡例: ◆＝筆頭著者　■＝最終著者　◎＝責任著者
 
+- ■◎ Robustness Gap of Large Language Models in Nephrology. *Journal of Nephrology* (2026)
 - ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
 - ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
 - ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
@@ -240,6 +241,7 @@ Full list of presentations and lectures on researchmap.
 
 Legend: ◆ first author　■ last author　◎ corresponding author
 
+- ■◎ Robustness Gap of Large Language Models in Nephrology. *Journal of Nephrology* (2026)
 - ■◎ Performance of Reasoning and Comparator Large Language Models on Nephrology Multiple-choice Questions. *JMA Journal* (2026)
 - ◆◎ Transforming hemodialysis care: a tripartite collaboration model among medical staff, AI agents, and robots. *Clinical and Experimental Nephrology* (2026)
 - ◆◎ Performance of o1 pro and GPT-4 in self-assessment questions for nephrology board renewal. *Frontiers in Medicine* (2025)
