@@ -10,9 +10,9 @@
 
 ## Statement — AIは医療と医師をどう変えるのか
 
-腎臓内科医として診療を行いながら、機械の知性を測ってきた。医学の問いに、AIはどこまで答えられるのか。血液と尿検査の数値から、病をどこまで言い当てられるのか。測れば測るほど、問いは反転していった。—着目すべきは、機械の知性ではなく、人間の理性ではないか。
+腎臓内科医として診療を行いながら、機械の知性を測ってきた。医学の問いに、AIはどこまで答えられるのか。血液検査と尿検査の数値から、病をどこまで言い当てられるのか。測れば測るほど、問いは反転していった。——着目すべきは、機械の知性ではなく、人間の理性ではないか。
 
-同じ診療現場でも、AIを使いこなす医師がいる一方で、AIに振り回される医師もいる。その分かれ目で、医療が大きく変わるかもしれない。だから、臨床現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
+同じ診療現場でも、AIを使いこなす医師がいる一方で、AIに振り回される医師もいる。その分かれ目が、医療を大きく変えるかもしれない。だから、臨床の現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
 
 AIによって医療は、医師は、どうなっていくのか。より良い医療を志す一人の人間として、この問いに全力で取り組んでいく。
 
@@ -180,9 +180,9 @@ Ryunosuke Noda is a nephrologist, medical AI researcher, and educator based in J
 
 How will AI change medicine — and physicians?
 
-As a nephrologist in daily practice, I have been measuring the intelligence of machines. How well can AI answer the questions of medicine? How accurately can it read disease from blood and urine tests? The more I measured, the more the question inverted itself — should our attention turn from machine intelligence to human reason?
+As a nephrologist in daily practice, I have been measuring the intelligence of machines. How well can AI answer the questions of medicine? How accurately can it identify disease from the values measured in blood and urine tests? The more I measured, the more the question inverted itself —— should our attention turn from machine intelligence to human reason?
 
-Even in the same clinical setting, some physicians use AI effectively, while others find themselves at its mercy. On that divide, medicine may change significantly. So I remain in clinical practice, verify through research, and build an open commons of learning for everyone.
+Even in the same clinical setting, some physicians use AI effectively, while others find themselves at its mercy. That divide could reshape medicine. So I continue to care for patients, verify through research, and build an open commons of learning for everyone.
 
 How will medicine — and physicians — change with AI? As one person striving for better medical care, I will devote myself to this question.
 
