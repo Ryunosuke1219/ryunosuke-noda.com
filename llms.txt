@@ -15,6 +15,6 @@
 - [Home (EN)](https://ryunosuke-noda.com/en.html), [Portfolio (EN)](https://ryunosuke-noda.com/en-works.html), [Contact (EN)](https://ryunosuke-noda.com/en-contact.html)
 
 ## Authoritative sources
-- researchmap (official achievement list): https://researchmap.jp/nodaryu
+- researchmap (official achievement list): [Japanese](https://researchmap.jp/nodaryu?lang=ja), [English](https://researchmap.jp/nodaryu?lang=en)
 - ORCID: https://orcid.org/0000-0002-5472-3277
 - JAMAIL: https://jamail.or.jp/

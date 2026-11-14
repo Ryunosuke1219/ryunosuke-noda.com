@@ -41,7 +41,7 @@ AIによって医療は、医師は、どうなっていくのか。より良い
 
 ## 業績（Portfolio）
 
-最新の業績一覧は researchmap（https://researchmap.jp/nodaryu）および CV（PDF: https://ryunosuke-noda.com/cv/CV_ja.pdf）にあります。論文名をクリックすると、掲載ページへ移動できます。
+最新の業績一覧は researchmap（https://researchmap.jp/nodaryu?lang=ja）および CV（PDF: https://ryunosuke-noda.com/cv/CV_ja.pdf）にあります。論文名をクリックすると、掲載ページへ移動できます。
 
 ### 研究の系譜（Research Narrative）
 
@@ -200,7 +200,7 @@ How will medicine — and physicians — change with AI? As one person striving 
 - **2025** — Received PhD (Medicine); appointed Assistant Professor, Division of Nephrology and Hypertension, St. Marianna University School of Medicine.
 - **2026** — Established the Japanese Association for Medical AI Literacy (JAMAIL); appointed founding president.
 
-Full lists of publications, lectures, and awards: Portfolio, researchmap (https://researchmap.jp/nodaryu), and the CV in English (PDF).
+Full lists of publications, lectures, and awards: Portfolio, researchmap (https://researchmap.jp/nodaryu?lang=en), and the CV in English (PDF).
 
 ## Contact
 
@@ -208,7 +208,7 @@ Walking the same road, together.
 
 ## Portfolio
 
-The official, up-to-date list of achievements is on researchmap (https://researchmap.jp/nodaryu) and in the CV (PDF: https://ryunosuke-noda.com/cv/CV_en.pdf). Click a paper title to visit its publication page.
+The official, up-to-date list of achievements is on researchmap (https://researchmap.jp/nodaryu?lang=en) and in the CV (PDF: https://ryunosuke-noda.com/cv/CV_en.pdf). Click a paper title to visit its publication page.
 
 ### Research Narrative
 
