@@ -14,7 +14,7 @@
 
 同じ診療現場でも、AIを使いこなす医師がいる一方で、AIに振り回される医師もいる。その分かれ目が、医療を大きく変えるかもしれない。だから、臨床の現場に立ち続ける。研究で確かめる。学びの場を、誰にでも開かれた公共財として築く。
 
-AIによって医療は、医師は、どうなっていくのか。より良い医療を志す一人の人間として、この問いに全力で取り組んでいく。
+AIによって医療は、医師は、どうなっていくのか。より良い医療を志す一人の医師として、この問いに全力で取り組んでいく。
 
 ## Practice
 
@@ -184,7 +184,7 @@ As a nephrologist in daily practice, I have been measuring the intelligence of m
 
 Even in the same clinical setting, some physicians use AI effectively, while others find themselves at its mercy. That divide could reshape medicine. So I continue to care for patients, verify through research, and build an open commons of learning for everyone.
 
-How will medicine — and physicians — change with AI? As one person striving for better medical care, I will devote myself to this question.
+How will medicine — and physicians — change with AI? As a physician striving for better medical care, I will devote myself to this question.
 
 ## Practice
 
